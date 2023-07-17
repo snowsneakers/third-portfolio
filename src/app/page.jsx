@@ -6,7 +6,7 @@ export default function Home() {
     <section className="flex justify-center text-black dark:text-[#eaeaea] tracking-tighter">
       <div className="w-full">
         <h1 className="text-7xl mb-10">
-          I'm Pat,
+          {"I'm"} Pat,
           <br />a web developer.
         </h1>
       </div>
