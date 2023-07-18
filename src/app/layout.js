@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
       >
         <section className="">{children}</section>
         <div className="blob-c -z-10">
-          <div class="shape-blob one w-[600px] h-[450px] sm:w-[400px] sm:h-[300px]"></div>
-          <div class="hidden sm:block shape-blob two w-[400px] h-[300px]"></div>
-          <div class="hidden sm:block shape-blob three w-[400px] h-[300px]"></div>
+          <div class="shape-blob one w-[400px] h-[300px] sm:w-[550px]"></div>
+          {/* <div class="shape-blob two w-[200px] h-[100px] sm:w-[400px] sm:h-[300px]"></div>
+          <div class="shape-blob three w-[200px] h-[100px] sm:w-[400px] sm:h-[300px]"></div> */}
         </div>
         <svg
           className="fixed top-0 left-0 min-h-screen opacity-20 dark:opacity-10 -z-50"
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             <feTurbulence
               type="fractalNoise"
               baseFrequency="9.95"
-              numOctaves="3"
+              numOctaves="1"
               stitchTiles="stitch"
             />
           </filter>

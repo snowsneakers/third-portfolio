@@ -19,9 +19,8 @@ export default function Home() {
             Since then, I have immersed myself in the world of web development.
             I have created websites and applications that I could never have
             imagined just a couple of years ago. Throughout this journey,{" "}
-            {"I've"}
-            been fortunate to grow my skills with the Collab Lab and the
-            supportive 100devs community, both of which have played a
+            {"I've"} been fortunate to grow my skills with the Collab Lab and
+            the supportive 100devs community, both of which have played a
             significant role in shaping me into the developer I am today.
           </p>
           <p>

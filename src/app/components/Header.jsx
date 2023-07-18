@@ -5,9 +5,7 @@ export default function Header() {
   return (
     <header className="md:sticky md:max-h-screen md:top-0 md:left-0 md:py-24 px-4 flex flex-col md:justify-between">
       <div className="space-y-3 mb-3">
-        <h1 className="text-8xl font-bold">
-          Pat<span className="text-sm">🏀</span>
-        </h1>
+        <h1 className="text-8xl font-bold">Pat</h1>
         <p className="text-2xl font-medium">
           Web dev Intern @{" "}
           <span className="font-bold text-purple-700">Lakers</span>

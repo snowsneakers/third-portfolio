@@ -8,9 +8,11 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Roboto, sans-serif;
+  background: whitesmoke;
+  color: black;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
     color: white;
@@ -18,9 +20,9 @@ body {
   .shape-blob {
     background: #330505;
   }
-}
+} */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   body {
     background: whitesmoke;
     color: black;
@@ -28,7 +30,7 @@ body {
   .shape-blob {
     background: rgb(255, 152, 212);
   }
-}
+} */
 
 .blob-c {
   min-height: 100vh;
@@ -41,6 +43,7 @@ body {
 }
 
 .shape-blob {
+  background: rgba(236, 247, 189, 0.658);
   border-radius: 40% 50% 30% 40%;
   animation: transform 18s ease-in-out infinite both alternate,
     movement_one 12s ease-in-out infinite both;
@@ -52,11 +55,10 @@ body {
 
 .shape-blob.one {
   /* filter: blur(100px); */
-  left: 5%;
+  left: 25%;
   top: 10%;
-  transform: rotate(-180deg);
-  animation: transform 8s ease-in-out infinite both alternate,
-    movement_one 20s ease-in-out infinite both;
+  transform: translate(-50%, -50%);
+  animation: transform 30s ease-in-out infinite both alternate;
 }
 
 .shape-blob.two {
@@ -73,25 +75,30 @@ body {
   top: 75%;
   transform: rotate(-180deg);
   animation: transform 7s ease-in-out infinite both alternate,
-    movement_one 23s ease-in-out infinite both;
+    movement_one 5s ease-in-out infinite both;
 }
 
 @keyframes transform {
   0%,
   100% {
     border-radius: 33% 67% 70% 30% / 30% 40% 70% 70%;
+    background-color: rgb(235, 253, 153);
   }
   20% {
     border-radius: 37% 63% 51% 49% / 37% 35% 35% 63%;
+    background-color: rgb(250, 234, 144);
   }
   40% {
     border-radius: 36% 64% 64% 36% / 64% 48% 52% 26%;
+    background-color: rgb(253, 141, 137);
   }
   60% {
     border-radius: 37% 63% 51% 49% / 30% 30% 70% 73%;
+    background-color: rgb(250, 234, 144);
   }
   80% {
     border-radius: 40% 60% 42% 58% / 51% 51% 49% 59%;
+    background-color: rgb(253, 141, 137);
   }
 }
 
