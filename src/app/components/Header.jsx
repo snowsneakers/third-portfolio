@@ -3,10 +3,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="md:sticky md:max-h-screen md:top-0 md:left-0 md:py-24 px-4 flex flex-col md:justify-between">
+    <header className="md:max-h-screen md:sticky md:top-0 md:left-0 flex flex-col md:justify-between py-12 md:py-20">
       <div className="space-y-3 mb-3">
-        <h1 className="text-8xl font-bold">Pat</h1>
-        <p className="text-2xl font-medium">
+        <h1 className="hidden md:block text-8xl font-bold">Pat</h1>
+        <h1 className="md:hidden text-6xl font-bold">I'm Pat</h1>
+        <p className="text-lg md:text-2xl font-medium">
           Web dev Intern @{" "}
           <span className="font-bold text-purple-700">Lakers</span>
         </p>
