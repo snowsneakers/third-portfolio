@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           <div class="shape-blob three w-[200px] h-[100px] sm:w-[400px] sm:h-[300px]"></div> */}
         </div>
         <svg
-          className="fixed top-0 left-0 opacity-20 dark:opacity-10 -z-50"
+          className="fixed top-0 left-0 opacity-20 dark:opacity-10 -z-50 min-h-screen"
           viewBox="0 0 400 400"
           xmlns="http://www.w3.org/2000/svg"
         >
