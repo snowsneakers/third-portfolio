@@ -18,18 +18,19 @@ export default function Home() {
           <p>
             Since then, I have immersed myself in the world of web development.
             I have created websites and applications that I could never have
-            imagined just a couple of years ago. Throughout this journey, I've
+            imagined just a couple of years ago. Throughout this journey,{" "}
+            {"I've"}
             been fortunate to grow my skills with the Collab Lab and the
             supportive 100devs community, both of which have played a
             significant role in shaping me into the developer I am today.
           </p>
           <p>
-            I want to continue learning and building, and I'm lucky to be
-            currently pursuing this passion with the Lakers. I'm excited to see
-            what other opportunities lie ahead in my development journey. During
-            my free time, I love creating memories with my girlfriend, eating
-            yummy food, watching movies from 2008, and hopefully winning in
-            counter-strike 😂
+            I want to continue learning and building, and {"I'm"} lucky to be
+            currently pursuing this passion with the Lakers. {"I'm"} excited to
+            see what other opportunities lie ahead in my development journey.
+            During my free time, I love creating memories with my girlfriend,
+            eating yummy food, watching movies from 2008, and hopefully winning
+            in counter-strike 😂
           </p>
         </div>
       </main>
