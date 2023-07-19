@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Header from "./components/Header";
+import Card from "./components/Card";
+import { projects } from "./utils/projects";
 
 export default function Home() {
   return (
@@ -49,76 +51,12 @@ export default function Home() {
             <h2 className="text-lg font-bold">Projects</h2>
           </div>
           <div className="space-y-5">
-            <p>
-              {"I'm"} Pat, a web developer who has always had two loves:
-              basketball and computers. After completing my undergrad, I
-              continued to pursued my passion for basketball by working as a
-              coach. Unfortunately, the pandemic forced the shutdown of sports
-              leagues, which turned out to be a blessing in disguise as it gave
-              me the opportunity to explore my other passion—computers.
-            </p>
-            <p>
-              Since then, I have immersed myself in the world of web
-              development. I have created websites and applications that I could
-              never have imagined just a couple of years ago. Throughout this
-              journey, {"I've"} been fortunate to grow my skills with the Collab
-              Lab and the supportive 100devs community, both of which have
-              played a significant role in shaping me into the developer I am
-              today.
-            </p>
-            <p>
-              I want to continue learning and building, and {"I'm"} lucky to be
-              currently pursuing this passion with the Lakers. {"I'm"} excited
-              to see what other opportunities lie ahead in my development
-              journey. During my free time, I love creating memories with my
-              girlfriend, eating yummy food, watching movies from 2008, and
-              hopefully winning in counter-strike 😂
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              maxime facilis accusamus sapiente accusantium ipsa quod quo!
-              Blanditiis iure error laborum nostrum repellat ex ipsam, commodi
-              debitis voluptatibus praesentium eveniet adipisci cupiditate
-              reprehenderit labore, hic placeat excepturi repellendus quasi
-              deleniti ullam aut? Inventore fugiat quia, dicta quam perspiciatis
-              consequatur aliquam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              maxime facilis accusamus sapiente accusantium ipsa quod quo!
-              Blanditiis iure error laborum nostrum repellat ex ipsam, commodi
-              debitis voluptatibus praesentium eveniet adipisci cupiditate
-              reprehenderit labore, hic placeat excepturi repellendus quasi
-              deleniti ullam aut? Inventore fugiat quia, dicta quam perspiciatis
-              consequatur aliquam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              maxime facilis accusamus sapiente accusantium ipsa quod quo!
-              Blanditiis iure error laborum nostrum repellat ex ipsam, commodi
-              debitis voluptatibus praesentium eveniet adipisci cupiditate
-              reprehenderit labore, hic placeat excepturi repellendus quasi
-              deleniti ullam aut? Inventore fugiat quia, dicta quam perspiciatis
-              consequatur aliquam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              maxime facilis accusamus sapiente accusantium ipsa quod quo!
-              Blanditiis iure error laborum nostrum repellat ex ipsam, commodi
-              debitis voluptatibus praesentium eveniet adipisci cupiditate
-              reprehenderit labore, hic placeat excepturi repellendus quasi
-              deleniti ullam aut? Inventore fugiat quia, dicta quam perspiciatis
-              consequatur aliquam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              maxime facilis accusamus sapiente accusantium ipsa quod quo!
-              Blanditiis iure error laborum nostrum repellat ex ipsam, commodi
-              debitis voluptatibus praesentium eveniet adipisci cupiditate
-              reprehenderit labore, hic placeat excepturi repellendus quasi
-              deleniti ullam aut? Inventore fugiat quia, dicta quam perspiciatis
-              consequatur aliquam!
-            </p>
+            {projects.slice(0, 3).map((project) => {
+              return <Card key={project.id} project={project} />;
+            })}
+            <button className="underline underline-offset-1 text-sm">
+              see more projects here
+            </button>
           </div>
         </div>
       </main>
