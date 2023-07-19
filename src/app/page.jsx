@@ -50,15 +50,50 @@ export default function Home() {
           <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             <h2 className="text-lg font-bold">Projects</h2>
           </div>
-          <div className="space-y-5">
+          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-1 gap-5">
             {projects.slice(0, 3).map((project) => {
               return <Card key={project.id} project={project} />;
             })}
-            <button className="underline underline-offset-1 text-sm">
-              see more projects here
-            </button>
           </div>
+          <button className="underline underline-offset-1 text-sm">
+            see more projects here
+          </button>
         </div>
+        <section className="space-y-5">
+          <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+            <h2 className="text-lg font-bold">Experience</h2>
+          </div>
+          <div className="flex">
+            <div className="w-[30%]">2022-2024</div>
+            <div className="w-[70%] space-y-5">
+              <h2 className="text-xl font-semibold font-title tracking-wide">
+                Los Angeles Lakers
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                quod amet praesentium eveniet saepe ducimus cupiditate cum
+                quibusdam ullam, dolorum tenetur at sed voluptates dolore
+                officiis corporis quia modi!
+              </p>
+              <p>array of skills</p>
+            </div>
+          </div>
+          <div className="flex">
+            <div className="w-[30%]">AUG - DEC 2022</div>
+            <div className="w-[70%] space-y-5">
+              <h2 className="text-xl font-semibold font-title tracking-wide">
+                Collab Lab
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                quod amet praesentium eveniet saepe ducimus cupiditate cum
+                quibusdam ullam, dolorum tenetur at sed voluptates dolore
+                officiis corporis quia modi!
+              </p>
+              <p>array of skills</p>
+            </div>
+          </div>
+        </section>
       </main>
     </section>
   );
