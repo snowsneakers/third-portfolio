@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
         <section className="max-w-[1150px] min-h-screen max-w-screen mx-auto">
           {children}
         </section>
-        <div className="blob-c absolute md:fixed -z-10">
-          <div class="shape-blob one w-[400px] h-[300px] sm:w-[550px]"></div>
-        </div>
+        {/* <div className="blob-c absolute md:fixed -z-10">
+          <div className="shape-blob one w-[400px] h-[300px] sm:w-[550px]"></div>
+        </div> */}
       </body>
     </html>
   );

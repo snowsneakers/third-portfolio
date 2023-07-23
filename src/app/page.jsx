@@ -2,8 +2,38 @@ import Image from "next/image";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import { projects } from "./utils/projects";
+import {
+  SiJavascript,
+  SiCss3,
+  SiHtml5,
+  SiTailwindcss,
+  SiReact,
+  SiNextdotjs,
+} from "react-icons/si";
+import { FaNode, FaLaptop } from "react-icons/fa";
 
 export default function Home() {
+  const renderSwtich = (lan) => {
+    switch (lan) {
+      case "JavaScript":
+        return <SiJavascript />;
+      case "CSS":
+        return <SiCss3 />;
+      case "HTML":
+        return <SiHtml5 />;
+      case "TailwindCSS":
+        return <SiTailwindcss />;
+      case "React":
+        return <SiReact />;
+      case "node":
+        return <FaNode />;
+      case "Next":
+        return <SiNextdotjs />;
+      default:
+        return lan;
+    }
+  };
+
   return (
     <section className="md:space-y-0 relative w-full md:grid md:grid-cols-2 px-6 md:px-14 min-h-screen">
       <Header />
@@ -14,35 +44,32 @@ export default function Home() {
           </div>
           <div className="space-y-5">
             <p>
-              {"I'm"} Pat, a web developer who has always had two loves:
-              <span className="font-bold">basketball</span> and{" "}
-              <span className="font-bold">computers</span>. After completing my
-              undergrad, I continued to pursued my passion for basketball by
-              working as a coach. Unfortunately, the pandemic forced the
-              shutdown of sports leagues, which turned out to be a blessing in
-              disguise as it gave me the opportunity to explore my other
-              passion—computers.
+              {"I'm"} Pat, a web developer who has always had two loves:{" "}
+              basketball and computers. After completing my undergrad, I
+              continued to pursued my passion for basketball by working as a
+              coach. Unfortunately, the pandemic forced the shutdown of sports
+              leagues, which turned out to be a blessing in disguise as it gave
+              me the opportunity to explore my other passion—computers.
             </p>
             <p>
-              Since then, I have immersed myself in the world of{" "}
-              <span className="font-bold">web development</span>. I have created
-              websites and applications that I could never have imagined just a
-              couple of years ago. Throughout this journey, {"I've"} been
-              fortunate to grow my skills with the{" "}
+              Since then, I have immersed myself in the world of web
+              development. I have created{" "}
+              <span className="font-bold">websites</span> and{" "}
+              <span className="font-bold">applications</span> that I could never
+              have imagined just a couple of years ago. Throughout this journey,{" "}
+              {"I've"} been fortunate to grow my skills with the{" "}
               <span className="font-bold">Collab Lab</span> and the supportive{" "}
               <span className="font-bold">100devs community</span>, both of
               which have played a significant role in shaping me into the
               developer I am today.
             </p>
             <p>
-              I want to continue <span className="font-bold">learning</span> and{" "}
-              <span className="font-bold">building</span>, and {"I'm"} lucky to
-              be currently pursuing this passion with the{" "}
-              <span className="font-bold">Lakers</span>. {"I'm"} excited to see
-              what other opportunities lie ahead in my development journey.
-              During my free time, I love creating memories with my girlfriend,
-              eating yummy food, watching movies from 2008, and hopefully
-              winning in counter-strike 😂
+              I want to continue learning and building, and {"I'm"} lucky to be
+              currently pursuing this passion with the Lakers. {"I'm"} excited
+              to see what other opportunities lie ahead in my development
+              journey. During my free time, I love creating memories with my
+              girlfriend, eating yummy food, watching movies from 2008, and
+              hopefully winning in counter-strike 😂
             </p>
           </div>
         </div>
@@ -50,7 +77,7 @@ export default function Home() {
           <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             <h2 className="text-lg font-bold">Projects</h2>
           </div>
-          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-1 gap-5">
+          <div className="grid grid-cols-1 gap-5">
             {projects.slice(0, 3).map((project) => {
               return <Card key={project.id} project={project} />;
             })}
@@ -59,14 +86,41 @@ export default function Home() {
             see more projects here
           </button>
         </div>
-        <section className="space-y-5">
-          <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+        <section className="space-y-10">
+          <div className="md:hidden sticky top-0 -my-5 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             <h2 className="text-lg font-bold">Experience</h2>
           </div>
-          <div className="flex">
-            <div className="w-[30%]">2022-2024</div>
-            <div className="w-[70%] space-y-5">
-              <h2 className="text-xl font-semibold font-title tracking-wide">
+          <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
+            <div className="leading-4 col-span-4 sm:col-span-1">
+              <span className="block text-sm leading-4 -mb-5 sm:-mb-0">
+                2022-2024
+              </span>
+            </div>
+            <div className="col-span-4 sm:col-span-3 space-y-5">
+              <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
+                Los Angeles Lakers
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                quod amet praesentium eveniet saepe ducimus cupiditate cum
+                quibusdam ullam, dolorum tenetur at sed voluptates dolore
+                officiis corporis quia modi!
+              </p>
+              <ul className="flex items-center gap-3 flex-wrap text-black">
+                {projects[0].techUsed.map((language, i) => (
+                  <li key={i} className="">
+                    {renderSwtich(language)}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
+            <div className="leading-4 col-span-4 sm:col-span-1">
+              <span className="">2022-2024</span>
+            </div>
+            <div className="col-span-4 sm:col-span-3 space-y-5">
+              <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
                 Los Angeles Lakers
               </h2>
               <p>
@@ -78,22 +132,8 @@ export default function Home() {
               <p>array of skills</p>
             </div>
           </div>
-          <div className="flex">
-            <div className="w-[30%]">AUG - DEC 2022</div>
-            <div className="w-[70%] space-y-5">
-              <h2 className="text-xl font-semibold font-title tracking-wide">
-                Collab Lab
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-                quod amet praesentium eveniet saepe ducimus cupiditate cum
-                quibusdam ullam, dolorum tenetur at sed voluptates dolore
-                officiis corporis quia modi!
-              </p>
-              <p>array of skills</p>
-            </div>
-          </div>
         </section>
+        <section className="min-h-screen"></section>
       </main>
     </section>
   );

@@ -32,20 +32,20 @@ export default function Card({ project }) {
   };
 
   return (
-    <div className="flex flex-col rounded-md space-y-3">
+    <div className="grid grid-cols-3 gap-3 rounded-md min-h-[125px]">
       <img
-        className="rounded-md max-h-[200px] object-cover"
+        className="rounded-md object-cover min-h-full"
         src="https://images.pexels.com/photos/5253574/pexels-photo-5253574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="thumbnail"
       />
-      <div className="flex flex-col space-y-3">
-        <h2 className="text-xl font-semibold font-title tracking-wide">
+      <div className="col-span-2 space-y-3">
+        <h2 className="font-semibold font-title tracking-wide leading-4">
           {project.name}
         </h2>
         <p className="text-sm">{project.description}</p>
         <ul className="flex items-center gap-3 flex-wrap text-black">
           {project.techUsed.map((language, i) => (
-            <li key={i} className="text-lg">
+            <li key={i} className="text-sm">
               {renderSwtich(language)}
             </li>
           ))}
