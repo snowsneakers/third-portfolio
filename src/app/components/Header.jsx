@@ -23,10 +23,10 @@ export default function Header() {
   };
 
   return (
-    <header className="md:max-h-screen md:sticky md:top-0 md:left-0 flex flex-col md:justify-between py-12 md:py-20">
+    <header className="lg:max-h-screen lg:sticky lg:top-0 lg:left-0 flex flex-col lg:justify-between py-12 lg:py-20">
       <div className="space-y-3 mb-3">
-        {/* <h1 className="hidden md:block text-8xl font-bold">Pat</h1>
-        <h1 className="md:hidden text-6xl font-bold">{"I'm"} Pat</h1> */}
+        {/* <h1 className="hidden lg:block text-8xl font-bold">Pat</h1>
+        <h1 className="lg:hidden text-6xl font-bold">{"I'm"} Pat</h1> */}
         {/* <motion.svg
           width="200"
           height="100"
@@ -185,7 +185,7 @@ export default function Header() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
           totam minima!
         </p>
-        <ul className="hidden md:block pt-10 space-y-3">
+        <ul className="hidden lg:block pt-10 space-y-3">
           <li>
             <ScrollLink activeClass="active" spy to="about" isDynamic={true}>
               About

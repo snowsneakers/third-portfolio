@@ -35,14 +35,14 @@ export default function Home() {
   };
 
   return (
-    <section className="relative w-full md:grid md:grid-cols-2 px-6 md:px-14 min-h-screen">
+    <section className="relative w-full lg:grid lg:grid-cols-2 px-6 lg:px-14 min-h-screen">
       <Header />
-      <main className="mt-5 md:mt-0 mb-20">
+      <main className="mt-5 lg:mt-0 mb-20">
         <section
-          className="pt-0 md:pt-20 space-y-5 md:space-y-0 leading-7"
+          className="pt-0 lg:pt-20 space-y-5 lg:space-y-0 leading-7"
           id="about"
         >
-          <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+          <div className="lg:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             <h2 className="text-lg font-bold">About</h2>
           </div>
           <div className="space-y-5">
@@ -76,12 +76,12 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="pt-20 space-y-5 md:space-y-0" id="projects">
-          <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+        <section className="pt-20 space-y-5 lg:space-y-0" id="projects">
+          <div className="lg:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             <h2 className="text-lg font-bold">Projects</h2>
           </div>
           <div className="space-y-5">
-            <div className="grid grid-cols-1 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-5">
               {projects.slice(0, 4).map((project) => {
                 return <Card key={project.id} project={project} />;
               })}
@@ -92,10 +92,10 @@ export default function Home() {
           </div>
         </section>
         <section
-          className="pt-20 space-y-5 md:space-y-0 min-h-0 md:min-h-screen"
+          className="pt-20 space-y-5 lg:space-y-0 min-h-0 lg:min-h-screen"
           id="experience"
         >
-          <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+          <div className="lg:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             <h2 className="text-lg font-bold">Experience</h2>
           </div>
           <div className="space-y-10">
