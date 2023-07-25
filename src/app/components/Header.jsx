@@ -1,8 +1,10 @@
 "use client";
 
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { animate, motion } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
 
 export default function Header() {
   const draw = {
@@ -175,7 +177,7 @@ export default function Header() {
           />
         </motion.svg>
 
-        <p className="text-lg md:text-2xl font-medium">
+        <p className="text-xl font-medium">
           Web dev Intern @{" "}
           <span className="font-bold text-purple-700">Lakers</span>
         </p>
@@ -183,34 +185,56 @@ export default function Header() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
           totam minima!
         </p>
+        <ul className="hidden md:block pt-10 space-y-3">
+          <li>
+            <ScrollLink activeClass="active" spy to="about" isDynamic={true}>
+              About
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink activeClass="active" spy to="projects" isDynamic={true}>
+              Projects
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              activeClass="active"
+              spy
+              to="experience"
+              isDynamic={true}
+            >
+              Experience
+            </ScrollLink>
+          </li>
+        </ul>
       </div>
       <ul className="flex items-center gap-4 text-black text-2xl mt-3">
         <li className="cursor-pointer">
-          <a
+          <Link
             href="https://github.com/snowsneakers"
             target="_blank"
             rel="noreferrer"
           >
             <FaGithub />
-          </a>
+          </Link>
         </li>
         <li className="cursor-pointer">
-          <a
+          <Link
             href="https://www.linkedin.com/in/patricksnowden/"
             target="_blank"
             rel="noreferrer"
           >
             <FaLinkedinIn />
-          </a>
+          </Link>
         </li>
         <li className="cursor-pointer">
-          <a
+          <Link
             href="https://twitter.com/snowsneakers_"
             target="_blank"
             rel="noreferrer"
           >
             <FaTwitter />
-          </a>
+          </Link>
         </li>
       </ul>
     </header>

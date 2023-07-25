@@ -35,10 +35,13 @@ export default function Home() {
   };
 
   return (
-    <section className="md:space-y-0 relative w-full md:grid md:grid-cols-2 px-6 md:px-14 min-h-screen">
+    <section className="relative w-full md:grid md:grid-cols-2 px-6 md:px-14 min-h-screen">
       <Header />
-      <main className="space-y-20 py-10 md:py-20">
-        <div className="space-y-5 leading-7">
+      <main className="mt-5 md:mt-0 mb-20">
+        <section
+          className="pt-0 md:pt-20 space-y-5 md:space-y-0 leading-7"
+          id="about"
+        >
           <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             <h2 className="text-lg font-bold">About</h2>
           </div>
@@ -72,68 +75,82 @@ export default function Home() {
               hopefully winning in counter-strike 😂
             </p>
           </div>
-        </div>
-        <div className="space-y-5">
+        </section>
+        <section className="pt-20 space-y-5 md:space-y-0" id="projects">
           <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             <h2 className="text-lg font-bold">Projects</h2>
           </div>
-          <div className="grid grid-cols-1 gap-5">
-            {projects.slice(0, 3).map((project) => {
-              return <Card key={project.id} project={project} />;
-            })}
+          <div className="space-y-5">
+            <div className="grid grid-cols-1 gap-5">
+              {projects.slice(0, 4).map((project) => {
+                return <Card key={project.id} project={project} />;
+              })}
+            </div>
+            <button className="underline underline-offset-1 text-sm">
+              see more projects here
+            </button>
           </div>
-          <button className="underline underline-offset-1 text-sm">
-            see more projects here
-          </button>
-        </div>
-        <section className="space-y-10">
-          <div className="md:hidden sticky top-0 -my-5 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
+        </section>
+        <section
+          className="pt-20 space-y-5 md:space-y-0 min-h-0 md:min-h-screen"
+          id="experience"
+        >
+          <div className="md:hidden sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
             <h2 className="text-lg font-bold">Experience</h2>
           </div>
-          <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
-            <div className="leading-4 col-span-4 sm:col-span-1">
-              <span className="block text-sm leading-4 -mb-5 sm:-mb-0">
-                2022-2024
-              </span>
+          <div className="space-y-10">
+            <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
+              <div className="leading-4 col-span-4 sm:col-span-1">
+                <span className="block text-sm leading-4 -mb-5 sm:-mb-0">
+                  2022-2024
+                </span>
+              </div>
+              <div className="col-span-4 sm:col-span-3 space-y-5">
+                <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
+                  Los Angeles Lakers
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                  quod amet praesentium eveniet saepe ducimus cupiditate cum
+                  quibusdam ullam, dolorum tenetur at sed voluptates dolore
+                  officiis corporis quia modi!
+                </p>
+                <ul className="flex items-center gap-3 flex-wrap text-black">
+                  {projects[0].techUsed.map((language, i) => (
+                    <li key={i} className="">
+                      {renderSwtich(language)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className="col-span-4 sm:col-span-3 space-y-5">
-              <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
-                Los Angeles Lakers
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-                quod amet praesentium eveniet saepe ducimus cupiditate cum
-                quibusdam ullam, dolorum tenetur at sed voluptates dolore
-                officiis corporis quia modi!
-              </p>
-              <ul className="flex items-center gap-3 flex-wrap text-black">
-                {projects[0].techUsed.map((language, i) => (
-                  <li key={i} className="">
-                    {renderSwtich(language)}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
-            <div className="leading-4 col-span-4 sm:col-span-1">
-              <span className="">2022-2024</span>
-            </div>
-            <div className="col-span-4 sm:col-span-3 space-y-5">
-              <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
-                Los Angeles Lakers
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-                quod amet praesentium eveniet saepe ducimus cupiditate cum
-                quibusdam ullam, dolorum tenetur at sed voluptates dolore
-                officiis corporis quia modi!
-              </p>
-              <p>array of skills</p>
+            <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
+              <div className="leading-4 col-span-4 sm:col-span-1">
+                <span className="block text-sm leading-4 -mb-5 sm:-mb-0">
+                  Aug-Dec 22
+                </span>
+              </div>
+              <div className="col-span-4 sm:col-span-3 space-y-5">
+                <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
+                  Collab Lab
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
+                  quod amet praesentium eveniet saepe ducimus cupiditate cum
+                  quibusdam ullam, dolorum tenetur at sed voluptates dolore
+                  officiis corporis quia modi!
+                </p>
+                <ul className="flex items-center gap-3 flex-wrap text-black">
+                  {projects[0].techUsed.map((language, i) => (
+                    <li key={i} className="">
+                      {renderSwtich(language)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
-        <section className="min-h-screen"></section>
       </main>
     </section>
   );

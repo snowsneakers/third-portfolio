@@ -35,7 +35,7 @@ export default function Card({ project }) {
     <div className="grid grid-cols-3 gap-3 rounded-md min-h-[125px]">
       <img
         className="rounded-md object-cover min-h-full"
-        src="https://images.pexels.com/photos/5253574/pexels-photo-5253574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src={project.image}
         alt="thumbnail"
       />
       <div className="col-span-2 space-y-3">

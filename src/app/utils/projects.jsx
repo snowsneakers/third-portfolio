@@ -2,7 +2,8 @@ export const projects = [
   {
     id: 1,
     name: "tesla waiting room",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/17582629/pexels-photo-17582629/free-photo-of-landscape-sunset-sand-dark.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     techUsed: ["React", "TailwindCSS", "node"],
     blurb:
       "This project was built to help soon to be Tesla owners connect with eachother so everyone can get a better idea about when they can expect thier new car. Tesla Waiting Room was made using React and TailwindCSS in the frontend. Node.js and MongoDB were used in the backend. MVC was used to organize the backend. Users need to register to be able to access the app which allows them to follow, like, and create updates about thier cars estimated delivery time.",
@@ -15,7 +16,8 @@ export const projects = [
   {
     id: 2,
     name: "portfolio",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/5462656/pexels-photo-5462656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     techUsed: ["Next", "TailwindCSS"],
     blurb:
       "This is my fully responsive portfolio, also known as, the side project that is never complete. I like to think my portfolio evolves as I continue to learn. I put hardwork and time into making something I am proud of.",
@@ -28,7 +30,8 @@ export const projects = [
   {
     id: 3,
     name: "moody songs",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/11722935/pexels-photo-11722935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     techUsed: ["React", "TailwindCSS", "node"],
     blurb:
       "Feeling down, angry, or just want to chill ? Use this app to listen to songs that match your mood. Select the emoji that matches your mood and you will be presented with songs. This app uses an API I made that contains information for all the songs!",
@@ -41,7 +44,8 @@ export const projects = [
   {
     id: 4,
     name: "Presidents",
-    image: "",
+    image:
+      "https://images.pexels.com/photos/12358219/pexels-photo-12358219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     techUsed: ["Next", "TailwindCSS", "node"],
     blurb:
       "This is the place to learn all things U.S. Presidents. Visiting the Presidents page will let you learn about each President. The quiz page will let you test your President Knowledge.",
