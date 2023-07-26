@@ -101,7 +101,7 @@ export default function Home() {
           <div className="space-y-10">
             <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
               <div className="leading-4 col-span-4 sm:col-span-1">
-                <span className="block text-sm leading-4 -mb-5 sm:-mb-0">
+                <span className="block text-sm leading-4 sm:-mb-0">
                   2022-2024
                 </span>
               </div>
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
               <div className="leading-4 col-span-4 sm:col-span-1">
-                <span className="block text-sm leading-4 -mb-5 sm:-mb-0">
+                <span className="block text-sm leading-4 sm:-mb-0">
                   Aug-Dec 22
                 </span>
               </div>
