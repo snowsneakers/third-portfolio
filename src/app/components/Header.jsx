@@ -1,6 +1,7 @@
 "use client";
 
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { animate, motion } from "framer-motion";
@@ -177,10 +178,17 @@ export default function Header() {
           />
         </motion.svg>
 
-        <p className="text-xl font-medium">
-          Web dev Intern @{" "}
-          <span className="font-bold text-purple-700">Lakers</span>
-        </p>
+        <div className="flex items-center gap-1">
+          <p className="text-xl font-medium">
+            Web dev Intern at{" "}
+            {/* <span className="font-bold text-purple-700">Lakers</span> */}
+          </p>
+          <img
+            src="https://cdn.nba.com/logos/nba/1610612747/primary/D/logo.svg"
+            alt="lakers logo"
+            className="w-[40px]"
+          />
+        </div>
         <p className="max-w-xs">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
           totam minima!
@@ -233,7 +241,7 @@ export default function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <FaTwitter />
+            <FaXTwitter />
           </Link>
         </li>
       </ul>

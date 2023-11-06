@@ -1,3 +1,5 @@
+"use client";
+
 import {
   SiJavascript,
   SiCss3,
@@ -8,6 +10,7 @@ import {
 } from "react-icons/si";
 import { FaNode, FaLaptop } from "react-icons/fa";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Card({ project }) {
   const renderSwtich = (lan) => {
@@ -32,7 +35,12 @@ export default function Card({ project }) {
   };
 
   return (
-    <div className="grid grid-cols-3 gap-3 rounded-md min-h-[125px]">
+    <motion.div
+      className="grid grid-cols-3 gap-3 rounded-md min-h-[125px]"
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+    >
       <img
         className="rounded-md object-cover min-h-full"
         src={project.image}
@@ -51,6 +59,6 @@ export default function Card({ project }) {
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
