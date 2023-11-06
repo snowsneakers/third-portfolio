@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+
 import Header from "./components/Header";
 import Card from "./components/Card";
 import { projects } from "./utils/projects";
@@ -11,6 +12,7 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import { FaNode, FaLaptop } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const renderSwtich = (lan) => {
@@ -46,15 +48,23 @@ export default function Home() {
             <h2 className="text-lg font-bold">About</h2>
           </div>
           <div className="space-y-5">
-            <p>
+            <motion.p
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
               {"I'm"} Pat, a web developer who has always had two loves:{" "}
               basketball and computers. After completing my undergrad, I
               continued to pursued my passion for basketball by working as a
               coach. Unfortunately, the pandemic forced the shutdown of sports
               leagues, which turned out to be a blessing in disguise as it gave
               me the opportunity to explore my other passion—computers.
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
               Since then, I have immersed myself in the world of web
               development. I have created{" "}
               <span className="font-bold">websites</span> and{" "}
@@ -65,15 +75,19 @@ export default function Home() {
               <span className="font-bold">100devs community</span>, both of
               which have played a significant role in shaping me into the
               developer I am today.
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
               I want to continue learning and building, and {"I'm"} lucky to be
               currently pursuing this passion with the Lakers. {"I'm"} excited
               to see what other opportunities lie ahead in my development
               journey. During my free time, I love creating memories with my
               girlfriend, eating yummy food, watching movies from 2008, and
               hopefully winning in counter-strike 😂
-            </p>
+            </motion.p>
           </div>
         </section>
         <section className="pt-20 space-y-5 lg:space-y-0" id="projects">
@@ -99,7 +113,12 @@ export default function Home() {
             <h2 className="text-lg font-bold">Experience</h2>
           </div>
           <div className="space-y-10">
-            <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
+            <motion.div
+              className="grid grid-cols-4 space-y-5 sm:space-y-0"
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
               <div className="leading-4 col-span-4 sm:col-span-1">
                 <span className="block text-sm leading-4 sm:-mb-0">
                   2022-2024
@@ -123,8 +142,13 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-            </div>
-            <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
+            </motion.div>
+            <motion.div
+              className="grid grid-cols-4 space-y-5 sm:space-y-0"
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
               <div className="leading-4 col-span-4 sm:col-span-1">
                 <span className="block text-sm leading-4 sm:-mb-0">
                   Aug-Dec 22
@@ -148,7 +172,7 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </motion.div>
           </div>
         </section>
       </main>
