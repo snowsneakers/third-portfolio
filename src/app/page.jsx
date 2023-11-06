@@ -37,7 +37,17 @@ export default function Home() {
   };
 
   return (
-    <section className="relative w-full lg:grid lg:grid-cols-2 px-6 lg:px-14 min-h-screen">
+    <motion.section
+      className="relative w-full lg:grid lg:grid-cols-2 px-6 lg:px-14 min-h-screen"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.3 }}
+      variants={{
+        visible: { opacity: 1 },
+        hidden: { opacity: 0 },
+      }}
+    >
       <Header />
       <main className="mt-5 lg:mt-0 mb-20">
         <section
@@ -176,6 +186,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </section>
+    </motion.section>
   );
 }
