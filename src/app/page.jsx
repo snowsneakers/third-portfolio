@@ -155,10 +155,13 @@ export default function Home() {
                   Los Angeles Lakers
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-                  quod amet praesentium eveniet saepe ducimus cupiditate cum
-                  quibusdam ullam, dolorum tenetur at sed voluptates dolore
-                  officiis corporis quia modi!
+                  Recently started my second season. My responsibilities include
+                  shipping production code and carrying out quality assurance
+                  tests. I develop responsive web pages based on Adobe XD
+                  designs and efficiently manage tasks across multiple projects
+                  within tight timelines. Additionally, I refactor legacy code
+                  to enhance the end-user experience, ensure compliance with
+                  modern standards, and meet NBA requirements.
                 </p>
                 {/* <ul className="flex items-center gap-3 flex-wrap text-black">
                   {projects[0].techUsed.map((language, i) => (

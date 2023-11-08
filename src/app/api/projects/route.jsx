@@ -12,6 +12,15 @@ const projects = [
     liveLink: "https://www.nba.com/lakers/team/stats",
   },
   {
+    id: 4,
+    name: "Blog Admin Panel",
+    video:
+      "https://res.cloudinary.com/hundreddevs/video/upload/v1699477332/cmsVideo_2_xrutn3.mp4",
+    techUsed: ["next", "tailwind", "node"],
+    description: "Custom backend + frontend blog admin panel",
+    liveLink: "https://www.nba.com/lakers/broadcast/international-schedule",
+  },
+  {
     id: 2,
     name: "NBA Standings",
     video:
