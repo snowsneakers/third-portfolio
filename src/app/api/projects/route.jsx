@@ -4,7 +4,8 @@ const projects = [
   {
     id: 1,
     name: "Lakers Stats",
-    image: "https://i.postimg.cc/BZFVyMkv/stats.png",
+    video:
+      "https://res.cloudinary.com/hundreddevs/video/upload/v1699422372/statsVid_j7gfci.mp4",
     techUsed: ["gatsby", "bootstrap", "scss"],
     description:
       "See current and past team, player, and stat leader information.",
@@ -13,7 +14,8 @@ const projects = [
   {
     id: 2,
     name: "NBA Standings",
-    image: "https://i.postimg.cc/FRdBhZKD/standings.png",
+    video:
+      "https://res.cloudinary.com/hundreddevs/video/upload/v1699422368/standingsVid_nw2kui.mp4",
     techUsed: ["gatsby", "bootstrap", "scss"],
     description: "See current and past NBA standings",
     liveLink: "https://www.nba.com/lakers/team/standings",
@@ -21,8 +23,8 @@ const projects = [
   {
     id: 3,
     name: "Lakers International Schedule",
-    image:
-      "https://images.pexels.com/photos/17582629/pexels-photo-17582629/free-photo-of-landscape-sunset-sand-dark.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    video:
+      "https://res.cloudinary.com/hundreddevs/video/upload/v1699422372/statsVid_j7gfci.mp4",
     techUsed: ["gatsby", "bootstrap", "scss"],
     description: "See Lakers game information for over 50 countries",
     liveLink: "https://www.nba.com/lakers/broadcast/international-schedule",

@@ -58,10 +58,7 @@ export default function Card({ project }) {
         loop
         muted
       >
-        <source
-          src="https://res.cloudinary.com/hundreddevs/video/upload/v1699421286/statsVideo_lfq7yg.mp4"
-          type="video/mp4"
-        />
+        <source src={project.video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="col-span-2 space-y-3">
