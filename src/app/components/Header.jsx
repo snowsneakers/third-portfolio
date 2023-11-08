@@ -190,8 +190,7 @@ export default function Header() {
           />
         </div>
         <p className="max-w-xs">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
-          totam minima!
+          Just someone who loves sports and creating things for the web.
         </p>
         <ul className="hidden lg:block pt-10 space-y-3">
           <li>

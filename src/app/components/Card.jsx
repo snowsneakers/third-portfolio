@@ -7,28 +7,29 @@ import {
   SiTailwindcss,
   SiReact,
   SiNextdotjs,
+  SiGatsby,
+  SiBootstrap,
 } from "react-icons/si";
 import { FaNode, FaLaptop } from "react-icons/fa";
+import { BsFiletypeScss } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Card({ project }) {
   const renderSwtich = (lan) => {
     switch (lan) {
-      case "JavaScript":
-        return <SiJavascript />;
-      case "CSS":
-        return <SiCss3 />;
-      case "HTML":
-        return <SiHtml5 />;
-      case "TailwindCSS":
+      case "gatsby":
+        return <SiGatsby />;
+      case "scss":
+        return <BsFiletypeScss />;
+      case "tailwind":
         return <SiTailwindcss />;
-      case "React":
-        return <SiReact />;
       case "node":
         return <FaNode />;
-      case "Next":
+      case "next":
         return <SiNextdotjs />;
+      case "bootstrap":
+        return <SiBootstrap />;
       default:
         return lan;
     }

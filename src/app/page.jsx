@@ -1,8 +1,9 @@
 "use client";
 
+import { useState, useEffect } from "react";
+
 import Header from "./components/Header";
 import Card from "./components/Card";
-import { projects } from "./utils/projects";
 import {
   SiJavascript,
   SiCss3,
@@ -15,6 +16,8 @@ import { FaNode, FaLaptop } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  const [projects, setProjects] = useState([]);
+
   const renderSwtich = (lan) => {
     switch (lan) {
       case "JavaScript":
@@ -35,6 +38,21 @@ export default function Home() {
         return lan;
     }
   };
+
+  useEffect(() => {
+    const getProjects = async () => {
+      try {
+        const res = await fetch("/api/projects");
+        const data = await res.json();
+        setProjects(data);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+    getProjects();
+  }, []);
+
+  console.log(projects);
 
   return (
     <motion.section
@@ -63,40 +81,24 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              {"I'm"} Pat, a web developer who has always had two loves:{" "}
-              basketball and computers. After completing my undergrad, I
-              continued to pursued my passion for basketball by working as a
-              coach. Unfortunately, the pandemic forced the shutdown of sports
-              leagues, which turned out to be a blessing in disguise as it gave
-              me the opportunity to explore my other passion—computers.
+              {"I'm"} Pat, a web developer with a passion for both basketball
+              and computers. After completing my undergrad, I coached
+              basketball, but the pandemic led me to discover my love for web
+              development. I've grown my skills through the{" "}
+              <span className="font-bold">Collab Lab</span> and
+              <span className="font-bold">100devs</span> community, shaping me
+              into the developer I am today.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Since then, I have immersed myself in the world of web
-              development. I have created{" "}
-              <span className="font-bold">websites</span> and{" "}
-              <span className="font-bold">applications</span> that I could never
-              have imagined just a couple of years ago. Throughout this journey,{" "}
-              {"I've"} been fortunate to grow my skills with the{" "}
-              <span className="font-bold">Collab Lab</span> and the supportive{" "}
-              <span className="font-bold">100devs community</span>, both of
-              which have played a significant role in shaping me into the
-              developer I am today.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              I want to continue learning and building, and {"I'm"} lucky to be
-              currently pursuing this passion with the Lakers. {"I'm"} excited
-              to see what other opportunities lie ahead in my development
-              journey. During my free time, I love creating memories with my
-              girlfriend, eating yummy food, watching movies from 2008, and
-              hopefully winning in counter-strike 😂
+              Now, I'm fortunate to be pursuing my passion with the{" "}
+              <span className="font-bold">Lakers</span> and look forward to more
+              opportunities ahead. In my free time, I enjoy making memories with
+              my girlfriend, savoring delicious food, watching 2008 movies, and
+              hoping to win in Counter-Strike 😂
             </motion.p>
           </div>
         </section>
@@ -110,9 +112,20 @@ export default function Home() {
                 return <Card key={project.id} project={project} />;
               })}
             </div>
-            <button className="underline underline-offset-1 text-sm">
-              see more projects here
-            </button>
+            <motion.button
+              className="text-sm underline underline-offset-1"
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <a
+                href="https://www.github.com/snowsneakers"
+                target="_blank"
+                rel="noreferrer"
+              >
+                See More Projects
+              </a>
+            </motion.button>
           </div>
         </section>
         <section
@@ -123,66 +136,129 @@ export default function Home() {
             <h2 className="text-lg font-bold">Experience</h2>
           </div>
           <div className="space-y-10">
-            <motion.div
-              className="grid grid-cols-4 space-y-5 sm:space-y-0"
-              initial={{ opacity: 0, y: 100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
+            <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
               <div className="leading-4 col-span-4 sm:col-span-1">
-                <span className="block text-sm leading-4 sm:-mb-0">
+                <motion.span
+                  className="block text-sm leading-4 sm:-mb-0"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
                   2022-2024
-                </span>
+                </motion.span>
               </div>
               <div className="col-span-4 sm:col-span-3 space-y-5">
-                <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
+                <motion.h2
+                  className="text-xl font-semibold font-title tracking-wide leading-4"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
                   Los Angeles Lakers
-                </h2>
-                <p>
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
                   quod amet praesentium eveniet saepe ducimus cupiditate cum
                   quibusdam ullam, dolorum tenetur at sed voluptates dolore
                   officiis corporis quia modi!
-                </p>
-                <ul className="flex items-center gap-3 flex-wrap text-black">
+                </motion.p>
+                {/* <ul className="flex items-center gap-3 flex-wrap text-black">
                   {projects[0].techUsed.map((language, i) => (
                     <li key={i} className="">
                       {renderSwtich(language)}
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               className="grid grid-cols-4 space-y-5 sm:space-y-0"
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
               <div className="leading-4 col-span-4 sm:col-span-1">
-                <span className="block text-sm leading-4 sm:-mb-0">
+                <motion.span
+                  className="block text-sm leading-4 sm:-mb-0"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
                   Aug-Dec 22
-                </span>
+                </motion.span>
               </div>
               <div className="col-span-4 sm:col-span-3 space-y-5">
-                <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
+                <motion.h2
+                  className="text-xl font-semibold font-title tracking-wide leading-4"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
                   Collab Lab
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-                  quod amet praesentium eveniet saepe ducimus cupiditate cum
-                  quibusdam ullam, dolorum tenetur at sed voluptates dolore
-                  officiis corporis quia modi!
-                </p>
-                <ul className="flex items-center gap-3 flex-wrap text-black">
+                </motion.h2>
+                <ul className="list-disc space-y-2">
+                  <motion.li
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                  >
+                    Created a fully responsive Smart Shopping List web
+                    application, covering web accessibility and adhering to ADA
+                    compliance principles.
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                  >
+                    Engaged in Agile teamwork to comprehend project
+                    requirements, create designs, write code, conduct testing,
+                    and maintain innovative our application.
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                  >
+                    Enhanced our product iteratively through pair programming
+                    and thorough code reviews.
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                  >
+                    Collaborated remotely as a team member in a group of four,
+                    under the guidance of experienced software engineers.
+                  </motion.li>
+                </ul>
+                {/* <ul className="flex items-center gap-3 flex-wrap text-black">
                   {projects[0].techUsed.map((language, i) => (
                     <li key={i} className="">
                       {renderSwtich(language)}
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
-            </motion.div>
+            </div>
+            <motion.button
+              className="text-sm underline underline-offset-1"
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <a
+                href="https://drive.google.com/file/d/1dqSEtRB5rDv3jc855zXP8X79velFlGJd/view"
+                target="_blank"
+                rel="noreferrer"
+              >
+                See Full Resume
+              </a>
+            </motion.button>
           </div>
         </section>
       </main>
