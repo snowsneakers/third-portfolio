@@ -18,6 +18,8 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const renderSwtich = (lan) => {
     switch (lan) {
@@ -43,11 +45,16 @@ export default function Home() {
   useEffect(() => {
     const getProjects = async () => {
       try {
+        setLoading(true);
         const res = await fetch("/api/projects");
         const data = await res.json();
         setProjects(data);
+        setLoading(false);
+        setError(false);
       } catch (error) {
         console.log(error.message);
+        setLoading(false);
+        setError(true);
       }
     };
     getProjects();
@@ -111,7 +118,9 @@ export default function Home() {
           <div className="space-y-5">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-5">
               {projects.slice(0, 4).map((project) => {
-                return <Card key={project.id} project={project} />;
+                return (
+                  <Card key={project.id} project={project} loading={loading} />
+                );
               })}
             </div>
             <motion.button
