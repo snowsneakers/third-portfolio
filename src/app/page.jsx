@@ -84,7 +84,7 @@ export default function Home() {
               {"I'm"} Pat, a web developer with a passion for both basketball
               and computers. After completing my undergrad, I coached
               basketball, but the pandemic led me to discover my love for web
-              development. I've grown my skills through the{" "}
+              development. {"I've"} grown my skills through the{" "}
               <span className="font-bold">Collab Lab</span> and
               <span className="font-bold">100devs</span> community, shaping me
               into the developer I am today.
@@ -94,7 +94,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Now, I'm fortunate to be pursuing my passion with the{" "}
+              Now, {"I'm"} fortunate to be pursuing my passion with the{" "}
               <span className="font-bold">Lakers</span> and look forward to more
               opportunities ahead. In my free time, I enjoy making memories with
               my girlfriend, savoring delicious food, watching 2008 movies, and
