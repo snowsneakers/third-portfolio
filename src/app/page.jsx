@@ -212,7 +212,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <a
-                href="https://www.github.com/snowsneakers"
+                href="https://drive.google.com/file/d/1dqSEtRB5rDv3jc855zXP8X79velFlGJd/view"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-1"
