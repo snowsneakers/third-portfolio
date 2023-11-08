@@ -151,7 +151,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="col-span-4 sm:col-span-3 space-y-5">
-                <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
+                <h2 className="text-lg font-semibold font-title tracking-wide leading-4">
                   Los Angeles Lakers
                 </h2>
                 <p>
@@ -181,7 +181,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="col-span-4 sm:col-span-3 space-y-5">
-                <h2 className="text-xl font-semibold font-title tracking-wide leading-4">
+                <h2 className="text-lg font-semibold font-title tracking-wide leading-4">
                   Collab Lab
                 </h2>
                 <p>
