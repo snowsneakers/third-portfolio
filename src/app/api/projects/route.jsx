@@ -4,7 +4,7 @@ const projects = [
   {
     id: 1,
     name: "Lakers Stats",
-    image: "https://i.postimg.cc/Y9z1jQBK/stats.png",
+    image: "https://i.postimg.cc/BZFVyMkv/stats.png",
     techUsed: ["gatsby", "bootstrap", "scss"],
     description:
       "See current and past team, player, and stat leader information.",
@@ -13,7 +13,7 @@ const projects = [
   {
     id: 2,
     name: "NBA Standings",
-    image: "https://i.postimg.cc/7PX3k1NS/standings.png",
+    image: "https://i.postimg.cc/FRdBhZKD/standings.png",
     techUsed: ["gatsby", "bootstrap", "scss"],
     description: "See current and past NBA standings",
     liveLink: "https://www.nba.com/lakers/team/standings",

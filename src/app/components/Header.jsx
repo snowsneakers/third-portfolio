@@ -194,12 +194,24 @@ export default function Header() {
         </p>
         <ul className="hidden lg:block pt-10 space-y-3">
           <li>
-            <ScrollLink activeClass="active" spy to="about" isDynamic={true}>
+            <ScrollLink
+              activeClass="active"
+              spy
+              to="about"
+              isDynamic={true}
+              className="cursor-pointer"
+            >
               About
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink activeClass="active" spy to="projects" isDynamic={true}>
+            <ScrollLink
+              activeClass="active"
+              spy
+              to="projects"
+              isDynamic={true}
+              className="cursor-pointer"
+            >
               Projects
             </ScrollLink>
           </li>
@@ -209,6 +221,7 @@ export default function Header() {
               spy
               to="experience"
               isDynamic={true}
+              className="cursor-pointer"
             >
               Experience
             </ScrollLink>

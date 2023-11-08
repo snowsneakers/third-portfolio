@@ -12,7 +12,7 @@ import {
 } from "react-icons/si";
 import { FaNode, FaLaptop } from "react-icons/fa";
 import { BsFiletypeScss } from "react-icons/bs";
-import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Card({ project }) {
@@ -37,24 +37,24 @@ export default function Card({ project }) {
 
   return (
     <motion.div
-      className="grid grid-cols-3 gap-3 rounded-md min-h-[125px]"
+      className="p-3 hover:bg-[#00000008] min-h-[175px] space-y-5 rounded-[6px]"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >
-      <img
-        className="rounded-md object-cover min-h-full"
+      <Image
+        className="rounded-[3px]"
         src={project.image}
+        width={1920}
+        height={1080}
         alt="thumbnail"
       />
       <div className="col-span-2 space-y-3">
-        <h2 className="font-semibold font-title tracking-wide leading-4">
-          {project.name}
-        </h2>
-        <p className="text-sm">{project.description}</p>
+        <h2 className="text-lg font-semibold font-title">{project.name}</h2>
+        <p className="">{project.description}</p>
         <ul className="flex items-center gap-3 flex-wrap text-black">
           {project.techUsed.map((language, i) => (
-            <li key={i} className="text-sm">
+            <li key={i} className="text-lg">
               {renderSwtich(language)}
             </li>
           ))}
