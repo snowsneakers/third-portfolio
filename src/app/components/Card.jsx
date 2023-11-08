@@ -12,6 +12,7 @@ import {
 } from "react-icons/si";
 import { FaNode, FaLaptop } from "react-icons/fa";
 import { BsFiletypeScss } from "react-icons/bs";
+import { FaSass } from "react-icons/fa6";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -20,8 +21,8 @@ export default function Card({ project }) {
     switch (lan) {
       case "gatsby":
         return <SiGatsby />;
-      case "scss":
-        return <BsFiletypeScss />;
+      case "sass":
+        return <FaSass />;
       case "tailwind":
         return <SiTailwindcss />;
       case "node":
