@@ -1,14 +1,16 @@
 import Card from "./Card";
 import { BiLinkExternal } from "react-icons/bi";
 
-async function getProjects() {
-  //   await new Promise((resolve) => setTimeout(resolve, 2000));
-  const res = await fetch("/api/projects");
-  return res.json();
-}
+// async function getProjects() {
+//   //   await new Promise((resolve) => setTimeout(resolve, 2000));
+
+//   console.log(res);
+//   return res;
+// }
 
 export default async function Projects() {
-  const projects = await getProjects();
+  const res = await import("../api/projects/route");
+  const projects = await (await res.GET()).json();
 
   return (
     <section className="pt-20 space-y-5 lg:space-y-0" id="projects">
@@ -17,9 +19,10 @@ export default async function Projects() {
       </div>
       <div className="space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-5">
-          {projects.slice(0, 4).map((project) => {
-            return <Card key={project.id} project={project} />;
-          })}
+          {projects.length > 0 &&
+            projects.slice(0, 4).map((project) => {
+              return <Card key={project.id} project={project} />;
+            })}
         </div>
         <button>
           <a
