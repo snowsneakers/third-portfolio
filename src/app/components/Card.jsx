@@ -1,5 +1,3 @@
-"use client";
-
 import {
   SiJavascript,
   SiCss3,
@@ -11,10 +9,7 @@ import {
   SiBootstrap,
 } from "react-icons/si";
 import { FaNode, FaLaptop } from "react-icons/fa";
-import { BsFiletypeScss } from "react-icons/bs";
 import { FaSass } from "react-icons/fa6";
-import Image from "next/image";
-import { motion } from "framer-motion";
 
 export default function Card({ project }) {
   const renderSwtich = (lan) => {
@@ -37,12 +32,7 @@ export default function Card({ project }) {
   };
 
   return (
-    <motion.div
-      className="p-3 min-h-[175px] space-y-5 rounded-[6px]"
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-    >
+    <div className="p-3 min-h-[175px] space-y-5 rounded-[6px]">
       <div className="relative rounded-[3px] overflow-hidden select-none aspect-video">
         <div
           role="overlay"
@@ -90,6 +80,6 @@ export default function Card({ project }) {
           ))}
         </ul>
       </div>
-    </motion.div>
+    </div>
   );
 }
