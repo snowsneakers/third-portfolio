@@ -43,10 +43,10 @@ export default function Card({ project }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >
-      <div className="relative rounded-[3px] overflow-hidden select-none aspect-video">
+      <div className="relative bg-black rounded-[3px] overflow-hidden select-none aspect-video">
         <div
           role="overlay"
-          className="absolute top-0 left-0 w-full h-full flex items-center justify-center rounded-[3px] transition duration-200"
+          className="absolute top-0 left-0 w-full h-full flex items-center justify-center rounded-[3px] transition duration-200 border border-gray-100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
