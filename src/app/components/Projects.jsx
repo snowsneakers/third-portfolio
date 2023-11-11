@@ -2,8 +2,10 @@ import Card from "./Card";
 import { BiLinkExternal } from "react-icons/bi";
 
 async function getProjects() {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-  const res = await fetch("http://localhost:3000/api/projects");
+  //   await new Promise((resolve) => setTimeout(resolve, 2000));
+  const res = await fetch(
+    "https://deploy-preview-3--third-portfolio.netlify.app/"
+  );
   return res.json();
 }
 

@@ -1,8 +1,6 @@
 import SkeletonCard from "./SkeletonCard";
 
 export default function Skeleton() {
-  const projects = ["a", "b"];
-
   return (
     <section className="pt-20 space-y-5 lg:space-y-0" id="projects">
       <div className="lg:hidden z-50 sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
