@@ -12,6 +12,7 @@ export default function Home() {
       <Header />
       <main className="mt-5 lg:mt-0 mb-20">
         <About />
+        {/* <Skeleton /> */}
         <Suspense fallback={<Loading />}>
           <Projects />
         </Suspense>

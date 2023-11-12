@@ -9,6 +9,7 @@ import { BiLinkExternal } from "react-icons/bi";
 // }
 
 export default async function Projects() {
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
   const res = await import("../api/projects/route");
   const projects = await (await res.GET()).json();
 

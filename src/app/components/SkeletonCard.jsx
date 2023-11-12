@@ -25,11 +25,11 @@ export default function SkeletonCard() {
           </svg>
         </div>
       </div>
-      <div className="col-span-2 space-y-3 animate-pulse">
+      <div className="col-span-2 min-h-[100px] flex flex-col justify-between animate-pulse">
         <span className="block bg-gray-200 w-[70px] h-[10px] rounded-md"></span>
         <span className="block bg-gray-200 h-[10px] rounded-md"></span>
         <span className="block bg-gray-200 h-[10px] rounded-md"></span>
-        <span className="block bg-gray-200 w-[140px] h-[10px] rounded-md"></span>
+        <span className="block bg-gray-200 h-[10px] rounded-md"></span>
         <span className="block bg-gray-200 w-[30px] h-[10px] rounded-md"></span>
       </div>
     </div>
