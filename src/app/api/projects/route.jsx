@@ -21,15 +21,6 @@ const projects = [
     liveLink: "https://www.nba.com/lakers/broadcast/international-schedule",
   },
   {
-    id: 2,
-    name: "NBA Standings",
-    video:
-      "https://res.cloudinary.com/hundreddevs/video/upload/v1699422368/standingsVid_nw2kui.mp4",
-    techUsed: ["gatsby", "bootstrap", "sass"],
-    description: "See current and past NBA standings",
-    liveLink: "https://www.nba.com/lakers/team/standings",
-  },
-  {
     id: 3,
     name: "Lakers International Schedule",
     video:
@@ -37,6 +28,15 @@ const projects = [
     techUsed: ["gatsby", "bootstrap", "sass"],
     description: "See Lakers game information for over 50 countries",
     liveLink: "https://www.nba.com/lakers/broadcast/international-schedule",
+  },
+  {
+    id: 2,
+    name: "NBA Standings",
+    video:
+      "https://res.cloudinary.com/hundreddevs/video/upload/v1699422368/standingsVid_nw2kui.mp4",
+    techUsed: ["gatsby", "bootstrap", "sass"],
+    description: "See current and past NBA standings",
+    liveLink: "https://www.nba.com/lakers/team/standings",
   },
 ];
 

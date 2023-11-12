@@ -9,20 +9,48 @@ export default function About() {
       </div>
       <div className="space-y-5">
         <p>
-          {"I'm"} Pat, a web developer with a passion for both basketball and
-          computers. After completing my undergrad, I coached basketball, but
-          the pandemic shut down most leagues. That gave me the opprotunity to
-          rediscover my love for computers. {"I've"} grown my skills
-          participating in the <span className="font-bold">Collab Lab</span> and
-          being a part of the <span className="font-bold">100devs</span>{" "}
+          Just a web developer with a passion for both basketball and computers.
+          After completing my undergrad, I coached basketball, but the pandemic
+          shut down most leagues. That gave me the opprotunity to rediscover my
+          love for computers. {"I've"} grown my skills participating in the{" "}
+          <span className="font-bold">
+            <a
+              className="hover:text-[#552583]"
+              href="https://the-collab-lab.codes/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Collab Lab
+            </a>
+          </span>{" "}
+          and being a part of the{" "}
+          <span className="font-bold">
+            <a
+              className="hover:text-[#552583]"
+              href="https://leonnoel.com/100devs/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              100devs
+            </a>
+          </span>{" "}
           community, shaping me into the developer I am today.
         </p>
         <p>
           Now, {"I'm"} fortunate to be pursuing my passion with the{" "}
-          <span className="font-bold">Lakers</span> and look forward to more
-          opportunities ahead. In my free time, I enjoy making memories with my
-          girlfriend, eating yummy food, watching movies from 2008, and hopfully
-          winning in Counter-Strike 😂
+          <span className="font-bold">
+            <a
+              className="hover:text-[#552583]"
+              href="https://www.nba.com/lakers/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Lakers
+            </a>
+          </span>{" "}
+          and look forward to more opportunities ahead. In my free time, I enjoy
+          making memories with my girlfriend, eating yummy food, watching movies
+          from 2008, and hopfully winning in Counter-Strike 😂
         </p>
       </div>
     </section>

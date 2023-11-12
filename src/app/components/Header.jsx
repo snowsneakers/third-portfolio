@@ -66,7 +66,7 @@ export default function Header() {
         </motion.svg>
 
         <div className="flex items-center gap-1">
-          <p className="text-xl font-medium">
+          <p className="text-xl font-bold">
             Web dev Intern at{" "}
             {/* <span className="font-bold text-purple-700">Lakers</span> */}
           </p>
