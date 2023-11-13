@@ -1,6 +1,6 @@
 export default function SkeletonCard() {
   return (
-    <div className="p-3 min-h-[175px] space-y-5 rounded-[6px]">
+    <div className="py-3 min-h-[175px] space-y-5 rounded-[6px]">
       <div className="relative rounded-[3px] overflow-hidden select-none aspect-video">
         <div
           role="overlay"

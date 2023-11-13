@@ -32,7 +32,7 @@ export default function Card({ project }) {
   };
 
   return (
-    <div className="p-3 min-h-[175px] space-y-5 rounded-[6px]">
+    <div className="py-3 min-h-[175px] space-y-5 rounded-[6px]">
       <div className="relative rounded-[3px] overflow-hidden select-none aspect-video">
         <div
           role="overlay"
@@ -57,7 +57,7 @@ export default function Card({ project }) {
           </svg>
         </div>
         <video
-          className="block w-full transition duration-200 relative"
+          className="block w-full transition duration-200 relative rounded-[3px]"
           width="640"
           height="400"
           autoPlay
