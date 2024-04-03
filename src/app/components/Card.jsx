@@ -60,7 +60,7 @@ export default function Card({ project }) {
         <h2 className="text-lg font-semibold font-title">{project.name}</h2>
         <p className="mb-5">{project.description}</p>
       </div>
-        <video
+        {/* <video
           className="block w-full transition duration-200 relative rounded-[3px] mb-5"
           width="640"
           height="400"
@@ -71,8 +71,9 @@ export default function Card({ project }) {
         >
           <source src={project.video} type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
         {/* <img src="./logos/team_stats.jpeg" alt="team stats project"  className="block w-full transition duration-200 relative rounded-[3px] mb-5"/> */}
+        <img src={project.gif} alt="team standing project" className="block w-full transition duration-200 relative rounded-[3px] mb-5"/>
           <ul className="flex items-center gap-3 flex-wrap text-black">
             {project.techUsed.map((language, i) => (
               <li key={i} className="text-lg">

@@ -88,7 +88,7 @@ export default function Header() {
               isDynamic={true}
               className="cursor-pointer"
             >
-              ✏️ About
+              About
             </ScrollLink>
           </li>
           <li>
@@ -99,7 +99,7 @@ export default function Header() {
               isDynamic={true}
               className="cursor-pointer"
             >
-              💪🏽 Projects
+              Projects
             </ScrollLink>
           </li>
           <li>
@@ -110,7 +110,7 @@ export default function Header() {
               isDynamic={true}
               className="cursor-pointer"
             >
-              🤓 Experience
+              Experience
             </ScrollLink>
           </li>
         </ul>
