@@ -1,11 +1,5 @@
 import Header from "./components/Header";
 import "./globals.css";
-import { Roboto } from "next/font/google";
-
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700"],
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Patrick Snowden",
@@ -15,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className}`}>
+      <body>
         <section className="max-w-[1150px] min-h-screen max-w-screen mx-auto">
           {children}
         </section>

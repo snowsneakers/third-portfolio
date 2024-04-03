@@ -15,17 +15,17 @@ export default function Card({ project }) {
   const renderSwtich = (lan) => {
     switch (lan) {
       case "gatsby":
-        return <SiGatsby />;
+        return <SiGatsby className="text-purple-900" />;
       case "sass":
-        return <FaSass />;
+        return <FaSass className="text-pink-500" />;
       case "tailwind":
-        return <SiTailwindcss />;
+        return <SiTailwindcss className="text-blue-600" />;
       case "node":
-        return <FaNode />;
+        return <FaNode className="text-green-500" />;
       case "next":
         return <SiNextdotjs />;
       case "bootstrap":
-        return <SiBootstrap />;
+        return <SiBootstrap className="text-blue-700" />;
       default:
         return lan;
     }
@@ -33,7 +33,7 @@ export default function Card({ project }) {
 
   return (
     <div className="py-3 min-h-[175px] space-y-5 rounded-[6px]">
-      <div className="relative rounded-[3px] overflow-hidden select-none aspect-video">
+      <div className="relative rounded-[3px] select-none aspect-video">
         <div
           role="overlay"
           className="absolute top-0 left-0 w-full h-full flex items-center justify-center rounded-[3px] transition duration-200"
@@ -56,8 +56,12 @@ export default function Card({ project }) {
             ></path>
           </svg>
         </div>
+        <div className="col-span-2">
+        <h2 className="text-lg font-semibold font-title">{project.name}</h2>
+        <p className="mb-5">{project.description}</p>
+      </div>
         <video
-          className="block w-full transition duration-200 relative rounded-[3px]"
+          className="block w-full transition duration-200 relative rounded-[3px] mb-5"
           width="640"
           height="400"
           autoPlay
@@ -68,17 +72,14 @@ export default function Card({ project }) {
           <source src={project.video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
-      <div className="col-span-2 min-h-[100px] flex flex-col justify-between">
-        <h2 className="text-lg font-semibold font-title">{project.name}</h2>
-        <p className="">{project.description}</p>
-        <ul className="flex items-center gap-3 flex-wrap text-black">
-          {project.techUsed.map((language, i) => (
-            <li key={i} className="text-lg">
-              {renderSwtich(language)}
-            </li>
-          ))}
-        </ul>
+        {/* <img src="./logos/team_stats.jpeg" alt="team stats project"  className="block w-full transition duration-200 relative rounded-[3px] mb-5"/> */}
+          <ul className="flex items-center gap-3 flex-wrap text-black">
+            {project.techUsed.map((language, i) => (
+              <li key={i} className="text-lg">
+                {renderSwtich(language)}
+              </li>
+            ))}
+          </ul>
       </div>
     </div>
   );

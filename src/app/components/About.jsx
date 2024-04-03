@@ -5,7 +5,7 @@ export default function About() {
       id="about"
     >
       <div className="lg:hidden z-50 sticky top-0 -mx-6 py-2 px-6 bg-[#f5f5f5] bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10">
-        <h2 className="text-xl font-bold">About</h2>
+        <h2 className="text-xl font-bold heading">About ✏️</h2>
       </div>
       <div className="space-y-5">
         <p>
@@ -15,7 +15,7 @@ export default function About() {
           love for computers. {"I've"} grown my skills participating in the{" "}
           <span className="font-bold">
             <a
-              className="hover:text-[#552583]"
+              className="hover:text-[#552583] about_link"
               href="https://the-collab-lab.codes/"
               target="_blank"
               rel="noreferrer"
@@ -26,7 +26,7 @@ export default function About() {
           and being a part of the{" "}
           <span className="font-bold">
             <a
-              className="hover:text-[#552583]"
+              className="hover:text-[#552583] about_link"
               href="https://leonnoel.com/100devs/"
               target="_blank"
               rel="noreferrer"
@@ -40,7 +40,7 @@ export default function About() {
           Now, {"I'm"} fortunate to be pursuing my passion with the{" "}
           <span className="font-bold">
             <a
-              className="hover:text-[#552583]"
+              className="hover:text-[#552583] about_link"
               href="https://www.nba.com/lakers/"
               target="_blank"
               rel="noreferrer"
@@ -50,7 +50,7 @@ export default function About() {
           </span>{" "}
           and look forward to more opportunities ahead. In my free time, I enjoy
           making memories with my girlfriend, eating yummy food, watching movies
-          from 2008, and hopfully winning in Counter-Strike 😂
+          from 2008, and hopfully winning in Counter-Strike <span className="text-black">😂</span>
         </p>
       </div>
     </section>

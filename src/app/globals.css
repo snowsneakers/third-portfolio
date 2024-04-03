@@ -10,14 +10,31 @@ html {
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
+  /* width: 100%;
+  min-height: 100vh; */
   font-family: Roboto, sans-serif;
-  background: whitesmoke;
+  /* background: whitesmoke;
   background-image: url("/light-bg.jpg");
   background-attachment: fixed;
-  background-size: 256px 256px;
+  background-size: 256px 256px; */
   color: black;
+}
+
+p{
+  color: #00000082;
+  font-weight: 400;
+}
+
+h2{
+  font-weight: 600 !important;
+}
+
+.heading{
+}
+
+.about_link{
+  color: #000000db;
+  font-weight: 600;
 }
 
 /* @media (prefers-color-scheme: dark) {

@@ -66,12 +66,12 @@ export default function Header() {
         </motion.svg>
 
         <div className="flex items-center gap-1">
-          <p className="text-xl font-bold">
+          <span className="text-xl font-[600]">
             Web dev Intern at{" "}
             {/* <span className="font-bold text-purple-700">Lakers</span> */}
-          </p>
+          </span>
           <img
-            src="https://cdn.nba.com/logos/nba/1610612747/primary/D/logo.svg"
+            src="./logos/lakers_logo.svg"
             alt="lakers logo"
             className="w-[40px]"
           />
@@ -88,7 +88,7 @@ export default function Header() {
               isDynamic={true}
               className="cursor-pointer"
             >
-              About
+              ✏️ About
             </ScrollLink>
           </li>
           <li>
@@ -99,7 +99,7 @@ export default function Header() {
               isDynamic={true}
               className="cursor-pointer"
             >
-              Projects
+              💪🏽 Projects
             </ScrollLink>
           </li>
           <li>
@@ -110,7 +110,7 @@ export default function Header() {
               isDynamic={true}
               className="cursor-pointer"
             >
-              Experience
+              🤓 Experience
             </ScrollLink>
           </li>
         </ul>
