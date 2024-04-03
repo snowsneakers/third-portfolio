@@ -10,7 +10,8 @@ const projects = [
     description:
       "See current and past team, player, and stat leader information.",
     liveLink: "https://www.nba.com/lakers/team/stats",
-    gif: './projects/team_stats.gif'
+    gif: './projects/team_stats.gif',
+    alt_video: './projects/1.webm'
   },
   {
     id: 4,
@@ -20,7 +21,8 @@ const projects = [
     techUsed: ["next", "tailwind", "node"],
     description: "Custom backend + frontend blog admin panel",
     liveLink: "https://www.nba.com/lakers/broadcast/international-schedule",
-    gif: './projects/blog_backend.gif'
+    gif: './projects/blog_backend.gif',
+    alt_video: './projects/2.webm'
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ const projects = [
     techUsed: ["gatsby", "bootstrap", "sass"],
     description: "See Lakers game information for over 50 countries",
     liveLink: "https://www.nba.com/lakers/broadcast/international-schedule",
-    gif: './projects/int_schedule.gif'
+    gif: './projects/int_schedule.gif',
+    alt_video: './projects/3.webm'
   },
   {
     id: 2,
@@ -40,7 +43,8 @@ const projects = [
     techUsed: ["gatsby", "bootstrap", "sass"],
     description: "See current and past NBA standings",
     liveLink: "https://www.nba.com/lakers/team/standings",
-    gif: './projects/team_standings.gif'
+    gif: './projects/team_standings.gif',
+    alt_video: './projects/4.webm'
   },
 ];
 
