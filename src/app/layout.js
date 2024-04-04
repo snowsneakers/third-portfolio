@@ -13,12 +13,6 @@ export const metadata = {
         width: 800,
         height: 600,
       },
-      {
-        url: 'https://raw.githubusercontent.com/snowsneakers/read-me-assets/main/logo.png',
-        width: 1800,
-        height: 1600,
-        alt: 'Pat logo',
-      },
     ],
     locale: 'en_US',
     type: 'website',
