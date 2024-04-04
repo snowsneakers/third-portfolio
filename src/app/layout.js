@@ -2,8 +2,27 @@ import Header from "./components/Header";
 import "./globals.css";
 
 export const metadata = {
-  title: "Patrick Snowden",
-  description: "Check out my portfolio",
+  openGraph: {
+    title: 'Patrick Snowden',
+    description: "Pat's Portfolio",
+    url: 'https://patricksnowden.com',
+    siteName: "Pat's Portfolio",
+    images: [
+      {
+        url: 'https://raw.githubusercontent.com/snowsneakers/read-me-assets/main/logo-small.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://raw.githubusercontent.com/snowsneakers/read-me-assets/main/logo.png',
+        width: 1800,
+        height: 1600,
+        alt: 'Pat logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({ children }) {
