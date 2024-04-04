@@ -55,7 +55,7 @@ export default function Experience() {
         </div>
         <button className="text-sm">
           <a
-            href="https://drive.google.com/file/d/1dqSEtRB5rDv3jc855zXP8X79velFlGJd/view"
+            href="./resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-1"

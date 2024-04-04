@@ -11,11 +11,11 @@ const projects = [
       "See current and past team, player, and stat leader information.",
     liveLink: "https://www.nba.com/lakers/team/stats",
     gif: './projects/team_stats.gif',
-    alt_video: './projects/1.webm'
+    alt_video: './projects/3.webm'
   },
   {
     id: 4,
-    name: "Blog Admin Panel",
+    name: "The Narrative Mind CMS",
     video:
       "https://res.cloudinary.com/hundreddevs/video/upload/v1699477332/cmsVideo_2_xrutn3.mp4",
     techUsed: ["next", "tailwind", "node"],
@@ -33,7 +33,7 @@ const projects = [
     description: "See Lakers game information for over 50 countries",
     liveLink: "https://www.nba.com/lakers/broadcast/international-schedule",
     gif: './projects/int_schedule.gif',
-    alt_video: './projects/3.webm'
+    alt_video: './projects/4.webm'
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const projects = [
     description: "See current and past NBA standings",
     liveLink: "https://www.nba.com/lakers/team/standings",
     gif: './projects/team_standings.gif',
-    alt_video: './projects/4.webm'
+    alt_video: './projects/1.webm'
   },
 ];
 
