@@ -57,9 +57,9 @@ export default function Card({ project }) {
           </svg>
         </div>
         <div className="col-span-2">
-        <h2 className="text-lg font-semibold font-title">{project.name}</h2>
-        <p className="mb-5">{project.description}</p>
-      </div>
+          <h2 className="text-lg font-semibold font-title">{project.name}</h2>
+          <p className="mb-5">{project.description}</p>
+        </div>
         <video
           className="block w-full transition duration-200 relative rounded-[3px] mb-5"
           width="640"
@@ -74,13 +74,13 @@ export default function Card({ project }) {
         </video>
         {/* <img src="./logos/team_stats.jpeg" alt="team stats project"  className="block w-full transition duration-200 relative rounded-[3px] mb-5"/> */}
         {/* <img src={project.gif} alt="team standing project" className="block w-full transition duration-200 relative rounded-[3px] mb-5"/> */}
-          <ul className="flex items-center gap-3 flex-wrap text-black">
-            {project.techUsed.map((language, i) => (
-              <li key={i} className="text-lg">
-                {renderSwtich(language)}
-              </li>
-            ))}
-          </ul>
+        <ul className="flex items-center gap-3 flex-wrap text-black">
+          {project.techUsed.map((language, i) => (
+            <li key={i} className="text-lg">
+              {renderSwtich(language)}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

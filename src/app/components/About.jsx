@@ -50,7 +50,8 @@ export default function About() {
           </span>{" "}
           and look forward to more opportunities ahead. In my free time, I enjoy
           making memories with my girlfriend, eating yummy food, watching movies
-          from 2008, and hopfully winning in Counter-Strike <span className="text-black">😂</span>
+          from 2008, and hopfully winning in Counter-Strike{" "}
+          <span className="text-black">😂</span>
         </p>
       </div>
     </section>

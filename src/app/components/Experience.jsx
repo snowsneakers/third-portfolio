@@ -12,37 +12,49 @@ export default function Experience() {
       <div className="space-y-10">
         <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
           <div className="leading-4 col-span-4 sm:col-span-1">
-            <img src="./logos/lakers_logo.svg" alt="lakers logo" className="w-[75px]" />
+            <img
+              src="./logos/lakers_logo.svg"
+              alt="lakers logo"
+              className="w-[75px]"
+            />
           </div>
           <div className="col-span-4 sm:col-span-3 space-y-5">
-          <div>
-            <span className="block text-sm leading-4 sm:-mb-0">2022-2024</span>
+            <div>
+              <span className="block text-sm leading-4 sm:-mb-0">
+                Oct 22 - Present
+              </span>
               <h2 className="text-lg font-semibold font-title tracking-wide leading-4">
                 Los Angeles Lakers
               </h2>
-          </div>
+            </div>
             <p>
-              Recently started my second season. My responsibilities include
-              shipping production code and carrying out quality assurance tests.
-              I develop responsive web pages based on Adobe XD designs and
-              efficiently manage tasks across multiple projects within tight
-              timelines. Additionally, I refactor legacy code to enhance the
-              end-user experience, ensure compliance with modern standards, and
-              meet NBA requirements.
+              Currently my second season with the Lakers. My responsibilities
+              include shipping production code and carrying out quality
+              assurance tests. I develop responsive web pages based on Adobe XD
+              designs and efficiently manage tasks across multiple projects
+              within tight timelines. Additionally, I refactor legacy code to
+              enhance the end-user experience, ensure compliance with modern
+              standards, and meet NBA requirements.
             </p>
           </div>
         </div>
         <div className="grid grid-cols-4 space-y-5 sm:space-y-0">
           <div className="leading-4 col-span-4 sm:col-span-1">
-            <img src="./logos/collab_lab.jpeg" alt="collab lab logo" className="w-[57.5px] rounded-md" />
+            <img
+              src="./logos/collab_lab.jpeg"
+              alt="collab lab logo"
+              className="w-[57.5px] rounded-md"
+            />
           </div>
           <div className="col-span-4 sm:col-span-3 space-y-5">
-          <div>
-            <span className="block text-sm leading-4 sm:-mb-0">Aug-Dec 22</span>
+            <div>
+              <span className="block text-sm leading-4 sm:-mb-0">
+                Aug - Dec 22
+              </span>
               <h2 className="text-lg font-semibold font-title tracking-wide leading-4">
                 Collab Lab
               </h2>
-          </div>
+            </div>
             <p>
               I contributed to the creation of a responsive Smart Shopping List
               web application. Working in an Agile team of four, we handled

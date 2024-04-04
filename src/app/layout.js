@@ -3,19 +3,19 @@ import "./globals.css";
 
 export const metadata = {
   openGraph: {
-    title: 'Patrick Snowden',
+    title: "Patrick Snowden",
     description: "Pat's Portfolio",
-    url: 'https://patricksnowden.com',
+    url: "https://patricksnowden.com",
     siteName: "Pat's Portfolio",
     images: [
       {
-        url: 'https://raw.githubusercontent.com/snowsneakers/read-me-assets/main/logo-small.png',
+        url: "https://raw.githubusercontent.com/snowsneakers/read-me-assets/main/logo-small.png",
         width: 800,
         height: 600,
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
 };
 
