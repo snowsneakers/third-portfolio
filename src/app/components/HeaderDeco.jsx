@@ -27,7 +27,7 @@ export default function HeaderDeco() {
   return (
     <div
       id="container"
-      className="w-full h-full absolute top-0 left-0"
+      className="w-full h-full absolute top-0 left-0 hidden lg:block"
       onMouseMove={handleMouseMove}
       //   onMouseLeave={handleMouseLeave}
     >
