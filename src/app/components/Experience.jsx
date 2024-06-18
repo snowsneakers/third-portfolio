@@ -28,13 +28,13 @@ export default function Experience() {
               </h2>
             </div>
             <p>
-              Currently finished my second season with the Lakers. My
-              responsibilities included shipping production code and carrying
-              out quality assurance tests. I developed responsive web pages
-              based on Adobe XD designs and efficiently managed tasks across
-              multiple projects within tight timelines. Additionally, I
-              refactored legacy code to enhance the end-user experience, ensure
-              compliance with modern standards, and meet NBA requirements.
+              Finished my second season with the Lakers. My responsibilities
+              included shipping production code and carrying out quality
+              assurance tests. I developed responsive web pages based on Adobe
+              XD designs and efficiently managed tasks across multiple projects
+              within tight timelines. Additionally, I refactored legacy code to
+              enhance the end-user experience, ensure compliance with modern
+              standards, and meet NBA requirements.
             </p>
           </div>
         </div>
