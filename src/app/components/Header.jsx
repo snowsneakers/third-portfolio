@@ -8,6 +8,8 @@ import { motion, animate } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 
+import HeaderDeco from "./HeaderDeco";
+
 export default function Header() {
   const draw = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -24,7 +26,8 @@ export default function Header() {
     },
   };
   return (
-    <header className="lg:max-h-screen lg:sticky lg:top-0 lg:left-0 flex flex-col lg:justify-between py-12 lg:py-20">
+    <header className="lg:max-h-screen lg:sticky lg:top-0 lg:left-0 flex flex-col lg:justify-between py-12 lg:py-20 relative">
+      <HeaderDeco />
       <div className="space-y-3 mb-3">
         <motion.svg
           width="200"
@@ -67,14 +70,14 @@ export default function Header() {
 
         <div className="flex items-center gap-1">
           <span className="text-xl font-[600]">
-            Web dev Intern at{" "}
+            Web Developer
             {/* <span className="font-bold text-purple-700">Lakers</span> */}
           </span>
-          <img
+          {/* <img
             src="./logos/lakers_logo.svg"
             alt="lakers logo"
             className="w-[40px]"
-          />
+          /> */}
         </div>
         <p className="max-w-xs">
           Just someone who loves sports and creating things for the web.
@@ -86,7 +89,7 @@ export default function Header() {
               spy
               to="about"
               isDynamic={true}
-              className="cursor-pointer"
+              className="cursor-pointer relative z-100"
             >
               About
             </ScrollLink>
@@ -97,7 +100,7 @@ export default function Header() {
               spy
               to="projects"
               isDynamic={true}
-              className="cursor-pointer"
+              className="cursor-pointer relative z-100"
             >
               Projects
             </ScrollLink>
@@ -108,7 +111,7 @@ export default function Header() {
               spy
               to="experience"
               isDynamic={true}
-              className="cursor-pointer"
+              className="cursor-pointer relative z-100"
             >
               Experience
             </ScrollLink>

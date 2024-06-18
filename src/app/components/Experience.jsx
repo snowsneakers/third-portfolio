@@ -21,20 +21,20 @@ export default function Experience() {
           <div className="col-span-4 sm:col-span-3 space-y-5">
             <div>
               <span className="block text-sm leading-4 sm:-mb-0">
-                Oct 22 - Present
+                Oct 22 - Jun 24
               </span>
               <h2 className="text-lg font-semibold font-title tracking-wide leading-4">
                 Los Angeles Lakers
               </h2>
             </div>
             <p>
-              Currently my second season with the Lakers. My responsibilities
-              include shipping production code and carrying out quality
-              assurance tests. I develop responsive web pages based on Adobe XD
-              designs and efficiently manage tasks across multiple projects
-              within tight timelines. Additionally, I refactor legacy code to
-              enhance the end-user experience, ensure compliance with modern
-              standards, and meet NBA requirements.
+              Currently finished my second season with the Lakers. My
+              responsibilities included shipping production code and carrying
+              out quality assurance tests. I developed responsive web pages
+              based on Adobe XD designs and efficiently managed tasks across
+              multiple projects within tight timelines. Additionally, I
+              refactored legacy code to enhance the end-user experience, ensure
+              compliance with modern standards, and meet NBA requirements.
             </p>
           </div>
         </div>
