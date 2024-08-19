@@ -27,7 +27,7 @@ export default function Header() {
   };
   return (
     <header className="lg:max-h-screen lg:sticky lg:top-0 lg:left-0 flex flex-col lg:justify-between py-12 lg:py-20 relative">
-      <HeaderDeco />
+      {/* <HeaderDeco /> */}
       <div className="space-y-3 mb-3">
         <motion.svg
           width="200"
