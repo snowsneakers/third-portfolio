@@ -9,7 +9,7 @@ export default function About() {
       </div>
       <div className="space-y-5">
         <p>
-          Just a web developer with a passion for both basketball and computers. After completing my undergrad, I coached basketball, but the pandemic shut down most leagues. That gave me the opportunity to rediscover my love for computers. {"I've"} grown my skills by participating in the{" "}
+          <span className="font-bold text-black">Self-taught</span> developer with a passion for both basketball and computers. After completing my undergrad, I coached basketball, but the pandemic shut down most leagues. That gave me the opportunity to rediscover my love for computers. {"I've"} grown my skills by participating in the{" "}
           <span className="font-bold">
             <a
               className="hover:text-[#552583] about_link"
@@ -45,8 +45,7 @@ export default function About() {
               Lakers
             </a>
           </span>{" "}
-          and now {"I'm"} looking forward to finding my next opportunity. In my free time, I enjoy making memories with my fiancée, cooking delicious food, watching movies, and hopefully winning in Counter-Strike{" "}
-          <span className="text-black">😂</span>
+          and now {"I'm"} looking forward to finding my next opportunity. In my free time, I enjoy making memories with my fiancée <span className="text-black">👩‍❤️‍👨</span> , cooking delicious food <span className="text-black">🍝</span> , and watching movies <span className="text-black">🎥</span>
         </p>
       </div>
     </section>
