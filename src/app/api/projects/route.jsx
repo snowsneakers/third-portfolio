@@ -12,6 +12,8 @@ const projects = [
     liveLink: "https://www.nba.com/lakers/team/stats",
     gif: "./projects/team_stats.gif",
     alt_video: "./projects/3.webm",
+    live: true,
+    repo: null
   },
   {
     id: 4,
@@ -23,6 +25,8 @@ const projects = [
     liveLink: "https://www.nba.com/lakers/broadcast/international-schedule",
     gif: "./projects/blog_backend.gif",
     alt_video: "./projects/2.webm",
+    live: false,
+    repo: "https://github.com/snowsneakers/the-narrative-mind"
   },
   {
     id: 3,
@@ -34,6 +38,8 @@ const projects = [
     liveLink: "https://www.nba.com/lakers/broadcast/international-schedule",
     gif: "./projects/int_schedule.gif",
     alt_video: "./projects/4.webm",
+    live: true,
+    repo: null
   },
   {
     id: 2,
@@ -45,6 +51,8 @@ const projects = [
     liveLink: "https://www.nba.com/lakers/team/standings",
     gif: "./projects/team_standings.gif",
     alt_video: "./projects/1.webm",
+    live: true,
+    repo: null
   },
 ];
 

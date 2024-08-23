@@ -10,6 +10,7 @@ import {
 } from "react-icons/si";
 import { FaNode, FaLaptop } from "react-icons/fa";
 import { FaSass } from "react-icons/fa6";
+import { BiLinkExternal } from "react-icons/bi";
 
 export default function Card({ project }) {
   const renderSwtich = (lan) => {
@@ -74,13 +75,34 @@ export default function Card({ project }) {
         </video>
         {/* <img src="./logos/team_stats.jpeg" alt="team stats project"  className="block w-full transition duration-200 relative rounded-[3px] mb-5"/> */}
         {/* <img src={project.gif} alt="team standing project" className="block w-full transition duration-200 relative rounded-[3px] mb-5"/> */}
-        <ul className="flex items-center gap-3 flex-wrap text-black">
-          {project.techUsed.map((language, i) => (
-            <li key={i} className="text-lg">
-              {renderSwtich(language)}
-            </li>
-          ))}
-        </ul>
+        <div className="flex items-center justify-between">
+          <ul className="flex items-center gap-3 flex-wrap text-black">
+            {project.techUsed.map((language, i) => (
+              <li key={i} className="text-lg">
+                {renderSwtich(language)}
+              </li>
+            ))}
+          </ul>
+          {project.live ? <button className="text-sm relative z-10">
+          <a
+            href={project.liveLink}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-1"
+          >
+            Live <BiLinkExternal />
+          </a>
+        </button> : <button className="text-sm relative z-10">
+          <a
+            href={project.repo}
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-1"
+          >
+            Repo <BiLinkExternal />
+          </a>
+        </button>}
+        </div>
       </div>
     </div>
   );
